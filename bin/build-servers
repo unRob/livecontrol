@@ -1,0 +1,6 @@
+#/usr/bin/env zsh
+
+GOARCH=amd64 GOOS=windows go build -o pkg/livecontrol.exe     bridge/livecontrol.go
+GOARCH=386	 GOOS=windows go build -o pkg/livecontrol-386.exe bridge/livecontrol.go
+GOARCH=amd64 GOOS=darwin  go build -o pkg/livecontrol     bridge/livecontrol.go
+# GOARCH=386	 GOOS=darwin  go build -o pkg/livecontrol-386 bridge/livecontrol.go
